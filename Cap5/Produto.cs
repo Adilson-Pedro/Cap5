@@ -15,7 +15,7 @@ namespace Cap5
         public int Quantidade;
 
 
-        //
+        //Construtor vazio
         public Produto()
         {
         }
