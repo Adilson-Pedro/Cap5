@@ -21,10 +21,11 @@ namespace Cap5
             string Nome = Console.ReadLine();
             Console.Write("Preço: ");
             double Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Quantidade no estoque: ");
-            int Quantidade = int.Parse(Console.ReadLine());
+           
 
-            Produto p = new Produto(Nome, Preco, Quantidade);
+            Produto p = new Produto(Nome, Preco);
+
+            Produto p2 = new Produto();
 
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + p);

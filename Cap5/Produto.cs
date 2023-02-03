@@ -9,11 +9,19 @@ namespace Cap5
 {
     internal class Produto
     {
-
+        // Atributos
         public string Nome;
         public double Preco;
         public int Quantidade;
 
+        public Produto()
+        {
+        }
+
+
+
+
+        // Construtor
         public Produto(string nome, double preco, int quantidade)
         {
             Nome = nome;
@@ -21,6 +29,16 @@ namespace Cap5
             Quantidade = quantidade;
         }
 
+        // Construtor 2
+        public Produto(string nome, double preco)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = 0;
+        }
+
+
+        // Metodos
         public double ValorTotalEmEstoque()
         {
             return Preco * Quantidade;
